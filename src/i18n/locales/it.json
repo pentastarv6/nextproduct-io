@@ -112,6 +112,12 @@
       }
     ]
   },
+  "explorer": {
+    "label": "Esplora le Nostre Competenze",
+    "title": "Scegli un'Area e Approfondisci",
+    "subtitle": "Invece di obbligare il visitatore a scorrere tutto, raggruppiamo le tre offerte principali in un unico explorer focalizzato. Apri la categoria più rilevante e rendi la pagina molto più facile da leggere.",
+    "cta": "Parliamo di Quest'Area"
+  },
   "about": {
     "label": "Chi Siamo",
     "title": "Advisor di Fiducia. Risultati Comprovati.",

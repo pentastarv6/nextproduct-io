@@ -112,6 +112,12 @@
       }
     ]
   },
+  "explorer": {
+    "label": "Explore Our Capabilities",
+    "title": "Choose One Area and Dive Deeper",
+    "subtitle": "Instead of forcing visitors to scroll through everything, we group your three core offers into a focused explorer. Open the category that matters most and keep the page easier to scan.",
+    "cta": "Discuss This Area"
+  },
   "about": {
     "label": "About NextProduct",
     "title": "Trusted Advisors. Proven Results.",
