@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Translations } from '@/i18n';
 
 interface AboutProps {
@@ -38,6 +39,17 @@ export default function About({ t }: AboutProps) {
 
           {/* Right: Stats */}
           <div>
+            <div className="mb-8 mx-auto max-w-md overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+              <Image
+                src="/professional-team.jpg"
+                alt="Professional team collaborating on digital strategy"
+                width={1200}
+                height={800}
+                className="h-48 w-full object-cover sm:h-56"
+                priority={false}
+              />
+            </div>
+
             <div className="grid grid-cols-2 gap-5">
               {t.about.stats.map((stat) => (
                 <div
