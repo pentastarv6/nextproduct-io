@@ -88,7 +88,7 @@ export default function Hero({ t, locale }: HeroProps) {
 
         {/* Scroll indicator */}
         <div className="mt-20 flex justify-center animate-fade-in-up [animation-delay:0.6s] opacity-0 [animation-fill-mode:forwards]">
-          <a
+          <Link
             href={`/${locale}#services`}
             className="flex flex-col items-center gap-2 text-white/30 transition hover:text-white/60"
             aria-label="Scroll to services"
@@ -97,7 +97,7 @@ export default function Hero({ t, locale }: HeroProps) {
             <svg className="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
