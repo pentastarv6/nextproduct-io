@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "NextProduct.io — Consulenza Product Management e Intelligenza Artificiale",
+    "description": "NextProduct affianca organizzazioni ambiziose nella progettazione, scalabilità e ottimizzazione dei prodotti attraverso expert product management, innovazione AI e trasformazione digitale.",
+    "keywords": "Consulenza Product Management, Consulenza AI, Trasformazione Digitale, Prompt Engineering, Agile, Strategia di Prodotto, NextProduct"
+  },
+  "nav": {
+    "services": "Servizi",
+    "learning": "Formazione",
+    "digitalGrowth": "Digital Growth",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "cta": "Contattaci"
+  },
+  "hero": {
+    "headline": "Eccellenza di Prodotto e Innovazione Guidata dall'AI",
+    "subheadline": "Dove Strategia di Prodotto, Intelligenza Artificiale ed Esecuzione Digitale si Incontrano",
+    "body": "NextProduct affianca organizzazioni ambiziose nella progettazione, scalabilità e ottimizzazione dei prodotti attraverso expert product management, innovazione AI e trasformazione digitale.",
+    "ctaPrimary": "Scrivici",
+    "ctaWhatsApp": "Contatto WhatsApp"
+  },
+  "services": {
+    "label": "Consulenza Product Management",
+    "title": "Advisory Strategico di Prodotto",
+    "subtitle": "Expertise data-driven per posizionare il tuo prodotto come leader di mercato.",
+    "items": [
+      {
+        "title": "Analisi Competitiva Personalizzata",
+        "description": "Un'analisi strutturata del tuo panorama competitivo. Identifichiamo gap, confrontiamo capacità e individuiamo opportunità strategiche per aiutarti a superare la concorrenza con precisione chirurgica."
+      },
+      {
+        "title": "Strategia di Price Positioning",
+        "description": "Progettiamo framework di pricing basati sull'evidenza per massimizzare i ricavi e rafforzare il valore percepito — allineando la tua offerta alle aspettative dei segmenti target."
+      },
+      {
+        "title": "Segmentazione di Mercato",
+        "description": "Definiamo e prioritizziamo i segmenti di mercato più preziosi attraverso dati comportamentali, demografici e psicografici, abilitando un'esecuzione go-to-market focalizzata ed efficiente."
+      },
+      {
+        "title": "Customer Discovery",
+        "description": "Attraverso interviste strutturate e metodologie di ricerca validate, scopriamo i reali bisogni, i pain point e i job-to-be-done dei clienti prima di investire nello sviluppo del prodotto."
+      },
+      {
+        "title": "User Journey Mapping",
+        "description": "Visualizziamo ogni touchpoint del cliente lungo l'esperienza end-to-end, identificando frizioni, punti di abbandono e momenti chiave dove il tuo prodotto può stupire e convertire."
+      },
+      {
+        "title": "Value Proposition Design",
+        "description": "Costruiamo value proposition che articolano chiaramente perché i clienti dovrebbero sceglierti — allineando i punti di forza del tuo prodotto con i gain e i pain relief specifici del cliente."
+      },
+      {
+        "title": "Strategia Go-To-Market",
+        "description": "Un blueprint completo per il lancio: posizionamento, pricing, canali e messaging — completamente su misura per accelerare l'ingresso nel mercato e generare trazione con il target giusto."
+      },
+      {
+        "title": "Strategia di Prodotto",
+        "description": "Definiamo la visione di prodotto a lungo termine e la roadmap prioritizzata che collega gli obiettivi di business ai risultati per i clienti — guidando il team dall'ideazione alla consegna e all'iterazione."
+      },
+      {
+        "title": "Analisi SWOT",
+        "description": "Una valutazione strategica rigorosa che mappa punti di forza, debolezze, opportunità e minacce della tua organizzazione — fornendo la chiarezza esecutiva necessaria per prendere decisioni informate e sicure."
+      }
+    ]
+  },
+  "learning": {
+    "label": "Programmi AI & Digital Learning",
+    "title": "Accelera le Tue Competenze AI e Digitali",
+    "subtitle": "Programmi hands-on orientati ai risultati, progettati per professionisti e team pronti a guidare nell'era dell'AI.",
+    "items": [
+      {
+        "title": "Comprendere l'Intelligenza Artificiale",
+        "description": "Un'introduzione pratica all'AI moderna: Large Language Models (LLM), Retrieval-Augmented Generation (RAG), basi dell'AI e come queste tecnologie ridefiniscono la strategia di prodotto e business. Pensato per executive e leader non tecnici."
+      },
+      {
+        "title": "Prompt Engineering Mastery",
+        "description": "Padroneggia l'arte e la scienza dei prompt efficaci. Impara tecniche avanzate — chain-of-thought, few-shot learning, output strutturati — per ottenere risultati costanti e di alta qualità dagli strumenti AI nei processi aziendali reali."
+      },
+      {
+        "title": "Agentic AI con Copilot e ChatGPT",
+        "description": "Programma pratico per progettare e distribuire agenti AI con Microsoft Copilot e ChatGPT. Impara ad automatizzare workflow complessi, delegare attività agli agenti AI e integrare il pensiero AI-first nelle operazioni quotidiane del tuo team."
+      },
+      {
+        "title": "Programmi Avanzati di Product Management",
+        "description": "Formazione completa di livello senior su discovery, prioritizzazione, roadmapping, OKR e stakeholder management. Pensato per product manager e leader che vogliono operare a livello di impatto strategico."
+      },
+      {
+        "title": "Vibe Coding — Sviluppo No-Code",
+        "description": "Crea prodotti digitali funzionali usando VS Code e GitHub Copilot — senza esperienza di programmazione. Impara a sfruttare lo sviluppo assistito dall'AI per lanciare MVP, automatizzare attività e creare valore reale rapidamente."
+      },
+      {
+        "title": "Metodologia Agile",
+        "description": "Formazione approfondita per Product Owner e Scrum Master: cerimonie sprint, backlog refinement, comunicazione con gli stakeholder e Agile scalato. Collega teoria e pratica con simulazioni reali e coaching dedicato."
+      },
+      {
+        "title": "Executive Coaching & Mentorship",
+        "description": "Coaching individuale e di gruppo per professionisti senior e founder che navigano trasformazioni, sfide di leadership o pivot strategici. Guida personalizzata da advisor con 25+ anni di esperienza C-suite e in organizzazioni globali."
+      }
+    ]
+  },
+  "digitalGrowth": {
+    "label": "Servizi Digital Growth",
+    "title": "Alimenta la Tua Pipeline con il Digital Growth",
+    "subtitle": "Digital marketing strategico progettato per generare lead qualificati e guidare una crescita dei ricavi misurabile.",
+    "items": [
+      {
+        "title": "Strategia ed Automazione Email Marketing",
+        "description": "Progettiamo programmi email data-driven che nutrono i prospect, riattivano i clienti dormienti e guidano le conversioni — completamente automatizzati, personalizzati su scala e integrati con il tuo CRM e stack di prodotto."
+      },
+      {
+        "title": "Pianificazione ed Esecuzione Campagne",
+        "description": "Gestione campagne end-to-end su canali digitali: strategia, direzione creativa, targeting, copywriting, landing page, A/B testing e ottimizzazione delle performance — allineati a risultati di business misurabili."
+      }
+    ]
+  },
+  "about": {
+    "label": "Chi Siamo",
+    "title": "Advisor di Fiducia. Risultati Comprovati.",
+    "body1": "NextProduct è guidato da professionisti senior con oltre 25 anni di esperienza di leadership concreta in organizzazioni globali, incluse aziende Fortune 500. Abbiamo gestito trasformazioni digitali, lanciato prodotti in mercati complessi e costruito team di prodotto ad alte prestazioni in Europa e oltre.",
+    "body2": "Non siamo una classica agenzia. Siamo advisor strategici — integrati, responsabili e completamente allineati al tuo successo. La nostra expertise certificata spazia da Product Management, Trasformazione Digitale, Metodologie Agile, Intelligenza Artificiale, Corporate Training e Servizi Digitali.",
+    "body3": "Quando scegli NextProduct, ottieni un partner di fiducia che comprende sia la sala del consiglio di amministrazione sia le trincee dello sviluppo prodotto.",
+    "stats": [
+      { "value": "25+", "label": "Anni di Esperienza di Leadership" },
+      { "value": "50+", "label": "Progetti Consegnati Globalmente" },
+      { "value": "10+", "label": "Settori Serviti" },
+      { "value": "100%", "label": "Impegnati nei Tuoi Risultati" }
+    ],
+    "certifications": "Certificati in Product Management · Trasformazione Digitale · Agile · Intelligenza Artificiale · Corporate Training"
+  },
+  "contact": {
+    "label": "Contatti",
+    "title": "Inizia la Conversazione",
+    "subtitle": "Pronto a trasformare la tua visione di prodotto in risultati di business misurabili? Parliamone.",
+    "namePlaceholder": "Il Tuo Nome",
+    "emailPlaceholder": "La Tua Email",
+    "messagePlaceholder": "Come possiamo aiutarti?",
+    "submitButton": "Invia Messaggio",
+    "sending": "Invio in corso…",
+    "successMessage": "Grazie! Ti risponderemo entro un giorno lavorativo.",
+    "errorMessage": "Qualcosa è andato storto. Riprova o scrivici direttamente.",
+    "email": "tarocannone@gmail.com",
+    "phone": "+39 340 196 3521",
+    "whatsapp": "https://wa.me/393401963521?text=Ciao%20vorrei%20maggiori%20informazioni%20sui%20vostri%20servizi"
+  },
+  "footer": {
+    "tagline": "Eccellenza di Prodotto. Innovazione AI. Trasformazione Digitale.",
+    "rights": "© 2026 NextProduct.io. Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "links": {
+      "services": "Servizi",
+      "learning": "Formazione",
+      "about": "Chi Siamo",
+      "contact": "Contatti"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Chatta su WhatsApp",
+    "ariaLabel": "Contattaci su WhatsApp"
+  }
+}
