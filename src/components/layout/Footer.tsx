@@ -22,7 +22,7 @@ export default function Footer({ locale, t }: FooterProps) {
       aria-label="Site footer"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Brand */}
           <div className="md:col-span-1">
             <Link
@@ -57,41 +57,6 @@ export default function Footer({ locale, t }: FooterProps) {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-brand-400">
-              Contact
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href={`mailto:${t.contact.email}`}
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  {t.contact.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${t.contact.phone.replace(/\s/g, '')}`}
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  {t.contact.phone}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={t.contact.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-green-400/80 transition-colors hover:text-green-400"
-                  aria-label={t.whatsapp.ariaLabel}
-                >
-                  WhatsApp
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-8 sm:flex-row">
