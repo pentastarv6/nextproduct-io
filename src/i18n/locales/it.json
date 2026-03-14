@@ -99,7 +99,7 @@
   },
   "digitalGrowth": {
     "label": "Servizi Digital Growth",
-    "title": "Alimenta la Tua Pipeline con il Digital Growth",
+    "title": "Marketing and Digital Growth",
     "subtitle": "Digital marketing strategico progettato per generare lead qualificati e guidare una crescita dei ricavi misurabile.",
     "items": [
       {
@@ -115,7 +115,7 @@
   "explorer": {
     "label": "Esplora le Nostre Competenze",
     "title": "Scegli un'Area e Approfondisci",
-    "subtitle": "Invece di obbligare il visitatore a scorrere tutto, raggruppiamo le tre offerte principali in un unico explorer focalizzato. Apri la categoria più rilevante e rendi la pagina molto più facile da leggere.",
+    "subtitle": "Seleziona una categoria per visualizzare i dettagli.",
     "cta": "Parliamo di Quest'Area"
   },
   "about": {

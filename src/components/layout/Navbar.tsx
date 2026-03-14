@@ -35,7 +35,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-white/8 bg-dark/90 backdrop-blur-xl shadow-xl shadow-black/20'
+          ? 'bg-dark/90 backdrop-blur-xl shadow-xl shadow-black/20'
           : 'bg-transparent'
       }`}
       role="banner"

@@ -82,13 +82,15 @@ export default function OfferingsExplorer({ t, locale }: OfferingsExplorerProps)
     },
   ]), [t]);
 
-  const [activeId, setActiveId] = useState<CategoryId>('services');
+  const [activeId, setActiveId] = useState<CategoryId | null>(null);
 
   useEffect(() => {
     const syncFromHash = () => {
       const hash = window.location.hash.replace('#', '') as CategoryId;
       if (categories.some((category) => category.id === hash)) {
         setActiveId(hash);
+      } else {
+        setActiveId(null);
       }
     };
 
@@ -97,12 +99,14 @@ export default function OfferingsExplorer({ t, locale }: OfferingsExplorerProps)
     return () => window.removeEventListener('hashchange', syncFromHash);
   }, [categories]);
 
-  const activeCategory = categories.find((category) => category.id === activeId) ?? categories[0];
+  const activeCategory = categories.find((category) => category.id === activeId);
 
   const activateCategory = (id: CategoryId) => {
-    setActiveId(id);
+    const nextId = activeId === id ? null : id;
+    setActiveId(nextId);
     if (typeof window !== 'undefined') {
-      window.history.replaceState(null, '', `#${id}`);
+      const nextHash = nextId ? `#${nextId}` : '#services';
+      window.history.replaceState(null, '', nextHash);
     }
   };
 
@@ -156,44 +160,46 @@ export default function OfferingsExplorer({ t, locale }: OfferingsExplorerProps)
           })}
         </div>
 
-        <div
-          id={`${activeCategory.id}-panel`}
-          className="mt-8 rounded-3xl border border-white/10 bg-surface/90 p-6 sm:p-8"
-        >
-          <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <p className={`mb-3 text-sm font-semibold uppercase tracking-[0.2em] ${activeCategory.accentClass}`}>
-                {activeCategory.label}
-              </p>
-              <h3 className="text-2xl font-display font-bold text-white sm:text-3xl">
-                {activeCategory.title}
-              </h3>
-              <p className="mt-3 max-w-3xl text-base leading-relaxed text-white/60">
-                {activeCategory.subtitle}
-              </p>
+        {activeCategory ? (
+          <div
+            id={`${activeCategory.id}-panel`}
+            className="mt-8 rounded-3xl border border-white/10 bg-surface/90 p-6 sm:p-8"
+          >
+            <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <p className={`mb-3 text-sm font-semibold uppercase tracking-[0.2em] ${activeCategory.accentClass}`}>
+                  {activeCategory.label}
+                </p>
+                <h3 className="text-2xl font-display font-bold text-white sm:text-3xl">
+                  {activeCategory.title}
+                </h3>
+                <p className="mt-3 max-w-3xl text-base leading-relaxed text-white/60">
+                  {activeCategory.subtitle}
+                </p>
+              </div>
+
+              <Link
+                href={`/${locale}#contact`}
+                className={`inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-semibold transition ${activeCategory.ctaClass}`}
+              >
+                {t.explorer.cta}
+              </Link>
             </div>
 
-            <Link
-              href={`/${locale}#contact`}
-              className={`inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-semibold transition ${activeCategory.ctaClass}`}
-            >
-              {t.explorer.cta}
-            </Link>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+              {activeCategory.items.map((item, index) => (
+                <article key={item.title} className="card group relative overflow-hidden border-white/8 bg-white/[0.03]">
+                  <div className="absolute left-0 top-0 bottom-0 w-0.5 rounded-full bg-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
+                  <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl ${activeCategory.iconClass}`}>
+                    {activeCategory.icons[index]}
+                  </div>
+                  <h4 className="mb-2 text-base font-semibold text-white">{item.title}</h4>
+                  <p className="text-sm leading-relaxed text-white/55">{item.description}</p>
+                </article>
+              ))}
+            </div>
           </div>
-
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {activeCategory.items.map((item, index) => (
-              <article key={item.title} className="card group relative overflow-hidden border-white/8 bg-white/[0.03]">
-                <div className="absolute left-0 top-0 bottom-0 w-0.5 rounded-full bg-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-                <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl ${activeCategory.iconClass}`}>
-                  {activeCategory.icons[index]}
-                </div>
-                <h4 className="mb-2 text-base font-semibold text-white">{item.title}</h4>
-                <p className="text-sm leading-relaxed text-white/55">{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
+        ) : null}
       </div>
     </section>
   );
