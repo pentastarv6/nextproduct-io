@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { Translations } from '@/i18n';
+import { trackEvent } from '@/lib/analytics';
 
 interface ContactProps {
   t: Translations;
@@ -24,9 +25,17 @@ export default function Contact({ t }: ContactProps) {
     try {
       await new Promise((resolve) => setTimeout(resolve, 1400));
       setStatus('success');
+      trackEvent('contact_form_submit', {
+        event_category: 'lead',
+        event_label: 'contact_section',
+      });
       setForm({ name: '', email: '', message: '' });
     } catch {
       setStatus('error');
+      trackEvent('contact_form_error', {
+        event_category: 'lead',
+        event_label: 'contact_section',
+      });
     }
   };
 
@@ -120,6 +129,9 @@ export default function Contact({ t }: ContactProps) {
                 disabled={status === 'sending'}
                 className="btn-primary w-full justify-center py-3.5 disabled:opacity-60 disabled:cursor-not-allowed"
                 aria-disabled={status === 'sending'}
+                data-analytics-event="contact_form_attempt"
+                data-analytics-category="lead"
+                data-analytics-label="contact_section"
               >
                 {status === 'sending' ? (
                   <>

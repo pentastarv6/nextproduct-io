@@ -6,6 +6,7 @@ import { organizationSchema, professionalServiceSchema } from '@/lib/structured-
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import { getTranslations } from '@/i18n';
 
 export function generateStaticParams() {
@@ -57,6 +58,7 @@ export default function LangLayout({
         <main id="main-content">{children}</main>
         <Footer locale={locale} t={t} />
         <WhatsAppButton t={t} />
+        <GoogleAnalytics />
       </body>
     </html>
   );

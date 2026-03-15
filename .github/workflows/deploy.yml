@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          NEXT_PUBLIC_GA_ID: G-J4QSZPQ97Y
         run: npm run build
 
       - name: Upload artifact

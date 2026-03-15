@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import type { Locale } from '@/i18n/config';
 import { locales, localeNames } from '@/i18n/config';
 import type { Translations } from '@/i18n';
@@ -10,6 +11,42 @@ interface NavbarProps {
   locale: Locale;
   t: Translations;
 }
+
+const socialLinks = [
+  {
+    name: 'X',
+    href: 'https://x.com/nextproduct_io',
+    ariaLabel: 'Follow NextProduct.io on X',
+    title: 'Follow @nextproduct_io on X',
+    eventLabel: 'x_navbar',
+    buttonClass: 'border-white/30 bg-white text-black hover:bg-white/90',
+    icon: (
+      <FaXTwitter className="h-[15px] w-[15px]" aria-hidden="true" />
+    ),
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/nextproduct-io',
+    ariaLabel: 'Follow NextProduct.io on LinkedIn',
+    title: 'Follow NextProduct.io on LinkedIn',
+    eventLabel: 'linkedin_navbar',
+    buttonClass: 'border-[#0A66C2]/70 bg-[#0A66C2] text-white hover:bg-[#0B5ABD]',
+    icon: (
+      <FaLinkedinIn className="h-[15px] w-[15px]" aria-hidden="true" />
+    ),
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/nextproduct_io',
+    ariaLabel: 'Follow NextProduct.io on Instagram',
+    title: 'Follow @nextproduct_io on Instagram',
+    eventLabel: 'instagram_navbar',
+    buttonClass: 'border-pink-300/40 bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white hover:brightness-110',
+    icon: (
+      <FaInstagram className="h-[15px] w-[15px]" aria-hidden="true" />
+    ),
+  },
+];
 
 const navLinks = (t: Translations, locale: Locale) => [
   { href: `/${locale}#services`, label: t.nav.services },
@@ -95,8 +132,33 @@ export default function Navbar({ locale, t }: NavbarProps) {
             ))}
           </div>
 
+          <div className="flex items-center gap-2" role="list" aria-label="Social links">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center justify-center rounded-lg border p-2 transition focus:outline-none focus:ring-2 focus:ring-brand-500 ${social.buttonClass}`}
+                aria-label={social.ariaLabel}
+                title={social.title}
+                data-analytics-event="social_click"
+                data-analytics-category="social"
+                data-analytics-label={social.eventLabel}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+
           {/* CTA */}
-          <Link href={`/${locale}#contact`} className="btn-primary text-xs px-5 py-2.5">
+          <Link
+            href={`/${locale}#contact`}
+            className="btn-primary text-xs px-5 py-2.5"
+            data-analytics-event="book_call_click"
+            data-analytics-category="cta"
+            data-analytics-label="navbar_cta"
+          >
             {t.nav.cta}
           </Link>
         </div>
@@ -161,10 +223,31 @@ export default function Navbar({ locale, t }: NavbarProps) {
                 </Link>
               ))}
             </div>
+            <div className="flex items-center gap-2" role="list" aria-label="Social links">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-center rounded-lg border p-2 transition ${social.buttonClass}`}
+                  aria-label={social.ariaLabel}
+                  title={social.title}
+                  data-analytics-event="social_click"
+                  data-analytics-category="social"
+                  data-analytics-label={`${social.eventLabel}_mobile`}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
             <Link
               href={`/${locale}#contact`}
               onClick={() => setMenuOpen(false)}
               className="btn-primary flex-1 text-center text-xs px-5 py-2.5"
+              data-analytics-event="book_call_click"
+              data-analytics-category="cta"
+              data-analytics-label="mobile_menu_cta"
             >
               {t.nav.cta}
             </Link>
