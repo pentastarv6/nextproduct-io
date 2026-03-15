@@ -181,6 +181,9 @@ export default function OfferingsExplorer({ t, locale }: OfferingsExplorerProps)
               <Link
                 href={`/${locale}#contact`}
                 className={`inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-semibold transition ${activeCategory.ctaClass}`}
+                data-analytics-event="book_call_click"
+                data-analytics-category="cta"
+                data-analytics-label={`explorer_${activeCategory.id}`}
               >
                 {t.explorer.cta}
               </Link>

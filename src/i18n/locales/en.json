@@ -10,13 +10,13 @@
     "digitalGrowth": "Digital Growth",
     "about": "About",
     "contact": "Contact",
-    "cta": "Get in Touch"
+    "cta": "Book a Free 15-min Call"
   },
   "hero": {
     "headline": "Empowering Product Excellence and AI-Driven Innovation",
     "subheadline": "Where Product Strategy, Artificial Intelligence, and Digital Execution Converge",
     "body": "NextProduct partners with individuals and organizations to design, scale, and optimize products through expert product management, AI-driven innovation, and digital services.",
-    "ctaPrimary": "Write to Us",
+    "ctaPrimary": "Book a Free 15-min Call",
     "ctaWhatsApp": "WhatsApp Contact"
   },
   "services": {
@@ -116,7 +116,7 @@
     "label": "Explore Our Capabilities",
     "title": "Choose One Area and Dive Deeper",
     "subtitle": "Select one category to view details.",
-    "cta": "Discuss This Area"
+    "cta": "Book a Free 15-min Call"
   },
   "about": {
     "label": "About NextProduct",
@@ -134,14 +134,14 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Start the Conversation",
-    "subtitle": "Ready to transform your product vision into measurable business outcomes? Let's talk.",
+    "title": "Book a Free 15-min Call",
+    "subtitle": "Tell us about your project and goals. We'll schedule a free 15-minute call to explore the best next steps.",
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "Your Email",
     "messagePlaceholder": "How can we help you?",
-    "submitButton": "Send Message",
+    "submitButton": "Request My Free 15-min Call",
     "sending": "Sending…",
-    "successMessage": "Thank you! We'll be in touch within one business day.",
+    "successMessage": "Thanks! We'll contact you soon to schedule your free 15-minute call.",
     "errorMessage": "Something went wrong. Please try again or email us directly.",
     "email": "tarocannone@gmail.com",
     "phone": "+39 340 196 3521",
@@ -151,6 +151,8 @@
     "tagline": "Product Excellence. AI-Driven Innovation. Digital Transformation.",
     "rights": "© 2026 NextProduct.io. All rights reserved.",
     "privacy": "Privacy Policy",
+    "socialLabel": "Follow Us",
+    "socialCta": "Follow us on social channels for updates and new insights.",
     "links": {
       "services": "Services",
       "learning": "Learning",

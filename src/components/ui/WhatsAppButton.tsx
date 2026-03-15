@@ -45,6 +45,9 @@ export default function WhatsAppButton({ t }: WhatsAppButtonProps) {
         rel="noopener noreferrer"
         aria-label={t.whatsapp.ariaLabel}
         aria-describedby={showTooltip ? 'whatsapp-tooltip' : undefined}
+        data-analytics-event="whatsapp_click"
+        data-analytics-category="contact"
+        data-analytics-label="floating_button"
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         onFocus={() => setShowTooltip(true)}

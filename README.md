@@ -185,6 +185,63 @@ RESEND_API_KEY=re_xxxxxxxxxxxx
 MAILCHIMP_API_KEY=xxxxxxxxxxxx
 ```
 
+## Free Analytics and Charts
+
+You can track traffic for free with **Google Analytics 4** and build visual dashboards in **Looker Studio**.
+
+### 1) Create a GA4 Property (Free)
+
+1. Go to Google Analytics and create a GA4 property for `nextproduct.io`.
+2. Create a Web Data Stream.
+3. Copy your Measurement ID (format: `G-XXXXXXXXXX`).
+
+### 2) Add GA ID to Your Environment
+
+Set this variable in your local `.env.local` and in your GitHub Pages build/deploy environment:
+
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+The project already includes client-side page view tracking for App Router routes.
+
+### 3) Build Free Charts in Looker Studio
+
+1. Open Looker Studio.
+2. Add Google Analytics as data source (your GA4 property).
+3. Create charts for:
+  - Users and sessions over time
+  - Top pages (`/en`, `/it`, etc.)
+  - Source / medium (organic, social, direct)
+  - Country and device breakdown
+
+### 3.1) Events Already Tracked in This Codebase
+
+The site now sends custom GA4 events for key actions:
+
+- `book_call_click`: Navbar CTA, mobile menu CTA, hero CTA, and explorer CTA
+- `whatsapp_click`: Hero WhatsApp CTA and floating WhatsApp button
+- `social_click`: X, LinkedIn, and Instagram clicks from navbar and footer
+- `contact_form_attempt`: Contact form submit button click
+- `contact_form_submit`: Successful form submission
+- `contact_form_error`: Failed form submission
+
+Each event includes category/label metadata so you can build conversion charts and funnels in GA4 or Looker Studio.
+
+### 4) Optional: Add Free Behavioral Insights
+
+For heatmaps and session recordings, you can add **Microsoft Clarity** (free plan) alongside GA4.
+
+### External Steps Pending Your Approval
+
+I completed all code-side instrumentation. You only need to approve these external account steps:
+
+1. Create/choose a GA4 property for `nextproduct.io`.
+2. Add `NEXT_PUBLIC_GA_ID` in your deployment environment.
+3. Trigger a new GitHub Pages deployment.
+4. Confirm traffic appears in GA4 Realtime.
+5. Connect GA4 to Looker Studio and pin charts.
+
 ---
 
 ## Performance & Lighthouse

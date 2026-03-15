@@ -10,13 +10,13 @@
     "digitalGrowth": "Digital Growth",
     "about": "Chi Siamo",
     "contact": "Contatti",
-    "cta": "Contattaci"
+    "cta": "Prenota una call gratuita di 15 min"
   },
   "hero": {
     "headline": "Eccellenza di Prodotto e Innovazione Guidata dall'AI",
     "subheadline": "Dove Strategia di Prodotto, Intelligenza Artificiale ed Esecuzione Digitale si Incontrano",
     "body": "NextProduct affianca individui e organizzazioni nella progettazione, scalabilità e ottimizzazione dei prodotti attraverso expert product management, innovazione AI e trasformazione digitale.",
-    "ctaPrimary": "Scrivici",
+    "ctaPrimary": "Prenota una call gratuita di 15 min",
     "ctaWhatsApp": "Contatto WhatsApp"
   },
   "services": {
@@ -116,7 +116,7 @@
     "label": "Esplora le Nostre Competenze",
     "title": "Scegli un'Area e Approfondisci",
     "subtitle": "Seleziona una categoria per visualizzare i dettagli.",
-    "cta": "Parliamo di Quest'Area"
+    "cta": "Prenota una call gratuita di 15 min"
   },
   "about": {
     "label": "Chi Siamo",
@@ -134,14 +134,14 @@
   },
   "contact": {
     "label": "Contatti",
-    "title": "Inizia la Conversazione",
-    "subtitle": "Pronto a trasformare la tua visione di prodotto in risultati di business misurabili? Parliamone.",
+    "title": "Prenota una call gratuita di 15 min",
+    "subtitle": "Raccontaci il tuo progetto e i tuoi obiettivi. Ti contatteremo per fissare una call gratuita di 15 minuti e definire i prossimi passi.",
     "namePlaceholder": "Il Tuo Nome",
     "emailPlaceholder": "La Tua Email",
     "messagePlaceholder": "Come possiamo aiutarti?",
-    "submitButton": "Invia Messaggio",
+    "submitButton": "Richiedi la mia call gratuita di 15 min",
     "sending": "Invio in corso…",
-    "successMessage": "Grazie! Ti risponderemo entro un giorno lavorativo.",
+    "successMessage": "Grazie! Ti contatteremo presto per pianificare la tua call gratuita di 15 minuti.",
     "errorMessage": "Qualcosa è andato storto. Riprova o scrivici direttamente.",
     "email": "tarocannone@gmail.com",
     "phone": "+39 340 196 3521",
@@ -151,6 +151,8 @@
     "tagline": "Eccellenza di Prodotto. Innovazione AI. Trasformazione Digitale.",
     "rights": "© 2026 NextProduct.io. Tutti i diritti riservati.",
     "privacy": "Privacy Policy",
+    "socialLabel": "Seguici",
+    "socialCta": "Seguici sui social per aggiornamenti e nuovi contenuti.",
     "links": {
       "services": "Servizi",
       "learning": "Formazione",
